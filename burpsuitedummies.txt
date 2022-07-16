@@ -1,0 +1,78 @@
+In any particular scenario, if you are required to intercept responses as
+well, then it can be done through additional configuration. To enable
+interception of responses, go to Proxy ➤ Options and check the option
+“Intercept responses based on the following rules:
+
+
+We have already seen in the previous chapter that Burp Suite proxy works
+as Man-in-the-Middle. While accessing an application over HTTPS
+through Burp Suite, the proxy will generate a TLS certificate signed by its
+certificate authority and store it on the client system. To use Burp Suite
+most efficiently in case of HTTPS, it is advisable to download and install
+the Burp Suite CA Certificate as trusted in the browser.
+To import and install the Burp Suite CA certificate, first ensure your
+Firefox browser is configured to work along with the Burp Suite proxy.
+Then in the address bar, type URL “http://burpsuite” as shown in
+
+
+P
+latform Authentication
+There are certain scenarios where the application hosted on the target web
+server is protected by authentication. In such a case, we need to configure
+the credentials in Burp Suite. In the absence of credentials, Burp Suite won't
+be able to access the protected portion of the application and miss out on
+potential checks. To configure platform authentication, navigate to “User
+Options ➤ Connections ➤ Platform Authentication” as shown in Figure
+
+Upstream Proxy Servers
+While testing applications in certain network environments, it may happen
+that there’s no direct access to that target application. In such a case, we
+might need to connect to a proxy server first and then connect to the
+target application. Burp Suite allows easy configuration of upstream proxy
+servers. Simply navigate to “User Options ➤ Connections ➤ Upstream
+Proxy Servers” as shown in Figure
+
+
+S
+OCKS Proxy
+Burp Suite also allows you to make all connection requests through a
+SOCKS proxy. To configure Burp Suite with SOCKS Proxy, navigate to
+“User Options ➤ Connections ➤ SOCKS Proxy” as shown in Figure 3-15,
+and configure the required proxy settings
+
+
+HOT Keys
+To configure
+Hotkeys, navigate to User Options ➤ Misc ➤ Hotkeys as shown in Figure
+
+Ctrl + R Send to Repeater
+Ctrl + I Send to Intruder
+Ctrl + F Forward intercepted proxy
+message
+Ctrl + Shift + T Switch to Target
+Ctrl + Shift + P Switch to Proxy
+Ctrl + Shift + I Switch to Intruder
+Ctrl + Shift + R Switch to Repeater
+Ctrl + Shift + O Switch to Project Options
+Ctrl + Shift + U URL Decode
+Ctrl + Shift + B Base-64 Decode
+Ctrl + B Base-64 Encode
+
+For all such purposes, Burp Suite provides users with a REST API
+interface. REST stands for Representational State Transfer and API stands
+for Application Programming Interface. REST API is the most popular way
+of interconnecting different applications.
+To enable the Burp Suite REST API, go to “User Options ➤ Misc” as
+
+
+To enable the Burp Suite REST API, simply check the option
+“Service running.” The REST API will be available by default on
+http://127.0.0.1:1337 as shown in Figure
+
+start from CHAPTER 4
+
+start from chapter 5
+
+
+
+
